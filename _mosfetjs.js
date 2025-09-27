@@ -49,7 +49,6 @@ const effectiveVds = Math.min(VDS, VG); // cap at VG
   const angle = angleRad*(180/Math.PI);
 const statusMessage = document.getElementById('statusMessage');
 
-// ... inside your dsSlider event listener:
 if (VDS > VG && VG > VT) {
   statusMessage.textContent = "Pinch off!!";
 } else {
@@ -60,3 +59,4 @@ if (VDS > VG && VG > VT) {
   channel_new.style.transform = `rotate(${-angle}deg)`;
   channel_new.style.transformOrigin = 'bottom left';
 });
+
