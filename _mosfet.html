@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MOSFET Simulator</title>
+  <link rel="stylesheet" href="_mosfetcss.css">
+</head>
+<body>
+  <h1>MOSFET Structure Simulator</h1>
+<BR><BR>
+
+  <div class="mosfet">
+    <div class="substrate">p Substrate
+      <div class="source-region">n+</div>
+      <div class="drain-region">n+</div>
+      <div class="channel"></div>
+      <div class="channel_new"></div>
+    <div class="gate-oxide">Metal Oxide</div>
+    <div class="polysilicon">polysilicon</div>
+<div class="gate-terminal"></div>
+<div class="source-terminal"></div>
+<div class="drain-terminal"></div>
+<div class="label source-label">Source (V<sub>S</sub>)</div>
+<div class="label gate-label">Gate (V<sub>G</sub>)</div>
+<div class="label drain-label">Drain (V<sub>D</sub>)</div>
+
+</div>
+  </div>
+<BR><BR>
+Threshold Voltage (V<sub>T</sub>): 1V <BR>
+<div class="vt-marker"></div>
+<label for="gateVoltage">Gate Voltage (V<sub>G</sub>): </label>
+  <input type="range" id="gateVoltage" min="0" max="10" step="0.1" value="0" list = "voltageMarks">
+<datalist id="voltageMarks"> <option value="1" label "Vt"></option></datalist>
+  <span id="voltageValue">0V</span>
+<BR><BR>
+<label for="dsVoltage">Drain-Source Voltage (V<sub>DS</sub>): </label>
+  <input type="range" id="dsVoltage" min="0" max="10" step="0.1" value="0">
+  <span id="dsvValue">0V</span>
+<BR><div id="statusMessage" style="margin-top: 20px; font-size: 18px; font-weight: bold; color: red;"></div>
+Source and Substrate are grounded
+
+  <script src="_mosfetjs.js"> </script>
+</body>
+</html>
