@@ -146,7 +146,7 @@ display: flex;
 .drain-terminal::after {
   content: "";
   position: absolute;
-  top: -36px; /* Slightly above the line */
+  top: -36px; 
   left: 50%;
   transform: translateX(-50%);
   width: 8px;
@@ -186,7 +186,7 @@ display: flex;
 }
 .vt-marker {
   position: relative;
-  width: 300px;         /* match slider width */
+  width: 300px;        
   margin: 0 auto;
   height: 10px;
 }
@@ -216,3 +216,4 @@ display: flex;
   color: crimson;
   font-family: 'Courier New', monospace;
 }
+
