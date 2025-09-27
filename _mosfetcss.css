@@ -127,13 +127,13 @@ display: flex;
   //border: 2px solid #000;
 }
 
-/* Common terminal line and dot style */
+//terminal line and dot
 .source-terminal::before,
 .gate-terminal::before,
 .drain-terminal::before {
   content: "";
   position: absolute;
-  top: -30px; /* Adjust line height */
+  top: -30px; 
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
@@ -216,4 +216,5 @@ display: flex;
   color: crimson;
   font-family: 'Courier New', monospace;
 }
+
 
